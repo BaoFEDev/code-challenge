@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xsm: 375px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 1900px;
+}
+
+@custom-variant h-xsm (@media (min-height: 375px));
+@custom-variant h-sm  (@media (min-height: 640px));
+@custom-variant h-md  (@media (min-height: 768px));
+@custom-variant h-lg  (@media (min-height: 1024px));
+@custom-variant h-xl  (@media (min-height: 1280px));
+
+@custom-variant h-hide-result (@media (max-height: 850px) and (min-width: 1024px));
+
+@custom-variant w-h-lg (@media (min-height: 1024px) and (min-width: 1024px));
+
+@utility bg-gradient-brand {
+  background-image: var(--gradient-primary-300-400);
+}
+
+@utility text-xs {
+  font-size: .625rem;
+}
+@utility text-sm {
+  font-size: .75rem;
+}
+@utility text-md {
+  font-size: .875rem;
+}
+@utility text-lg {
+  font-size: 1rem;
+}
+@utility text-sub {
+  font-size: 1.125rem;
+}
+@utility text-title {
+  font-size: 1.5rem;
+}
+@utility text-display {
+  font-size: 2rem;
+}
